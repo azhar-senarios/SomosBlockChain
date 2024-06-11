@@ -1,0 +1,116 @@
+name: somos_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  go_router: ^14.1.4
+  intl: ^0.19.0
+  flutter_svg: ^2.0.10+1
+  dio: ^5.4.3+1
+  k_chart: ^0.7.1
+  provider: ^6.1.2
+  fluttertoast: ^8.2.6
+  cached_network_image: ^3.3.1
+  shared_preferences: ^2.2.3
+  url_launcher: ^6.3.0
+  flutter_riverpod: ^2.5.1
+  dotted_border: ^2.1.0
+  get_it: ^7.7.0
+  qr_code_scanner: ^1.0.1
+  flutter_stripe: ^10.1.1
+  flutter_local_notifications: ^17.1.2
+  firebase_messaging: ^15.0.0
+  firebase_core: ^3.0.0
+  firebase_remote_config: ^5.0.0
+  step_progress_indicator: ^1.0.2
+  flutter_inappwebview: ^6.0.0
+  scrollable_positioned_list: ^0.3.8
+  flutter_braintree: ^4.0.0
+
+  # to handle/use several nullable collection or data structure methods
+  collection: ^1.18.0
+
+  # to handle links in mobile like normal web urls
+  url_strategy: ^0.2.0
+
+  # for charts and graphs (should be in multiple files)
+  fl_chart: ^0.68.0
+
+  #  To generate QR encoded image for wallet id
+  qr_flutter: ^4.1.0
+
+  # bio-metric verification
+  local_auth: ^2.2.0
+
+  # for gradient based colors
+  gradient_borders: ^1.0.1
+  # to show toggle switches on coin_details.dart screen
+  toggle_switch: ^2.3.0
+  gap: ^3.0.1
+  flutter_screenutil: ^5.9.3
+  # to check app package number
+  package_info_plus: ^8.0.0
+  share_plus: ^9.0.0
+  path_provider: ^2.1.3
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  riverpod_lint: ^2.3.10
+  flutter_launcher_icons: ^0.13.1
+
+  build_runner: ^2.4.10
+  flutter_gen_runner: ^5.5.0+1
+
+  # windows => dart run build_runner build
+  flutter_gen: ^5.5.0+1
+
+#  flutter pub get
+#  flutter pub run flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  background_color: "#0B0A0A"
+  remove_alpha_ios: true
+
+# created files only after these lines were added
+flutter_gen_runner:
+  enabled: false
+  generate_for:
+    include:
+      - pubspec.yaml
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+    - assets/icons/
+
+  fonts:
+    - family: Urbanist
+      fonts:
+        - asset: assets/fonts/Urbanist-Regular.ttf
+        - asset: assets/fonts/Urbanist-Bold.ttf
+          weight: 800
+        - asset: assets/fonts/Urbanist-Semibold.ttf
+          weight: 700
+    - family: Bebas
+      fonts:
+        - asset: assets/fonts/BebasNeue-Regular.ttf
